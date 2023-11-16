@@ -239,3 +239,6 @@ $(call inherit-product, vendor/aosp/config/clocks.mk)
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Pixel Launcher Extended
+$(call inherit-product-if-exists, vendor/PixelLauncherExtended/PixelLauncher.mk)
